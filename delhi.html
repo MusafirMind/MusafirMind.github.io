@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome to Delhi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <form>
+      <input type="button" onclick="window.location.href='index.html'" value="Home" />
+    </form>
+    <h3 class="w3-padding-64"><b>delhi</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Famous Places</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transports</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hotels</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Risk level</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>DELHI</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Famous places</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images\india gate.jpeg" style="width:100%" onclick="onClick(this)" alt="Delhi">
+      <img src="images\qutub minar.jpg" style="width:100%" onclick="onClick(this)" alt="qutub minar">
+      
+      
+    </div>
+
+    <div class="w3-half">
+      <img src="images\redfort.jpg" style="width:100%" onclick="onClick(this)" alt="redfort">
+      <img src="images\akshardham.jpg" style="width:100%" onclick="onClick(this)" alt="akshardham.">
+      <img src="images\lotus temple.jpg" style="width:100%" onclick="onClick(this)" alt="lotus temple">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Transport</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4><b>Delhi has significant reliance on its transport infrastructure. The city seeks to develop a highly efficient public transport system with the Delhi Metro,Buses,Auto-rickshaws and Taxis.</b></h4>
+
+    <h2>Road transport</h2>
+    
+    <ul>
+      <li><b> Buses</b> (Delhi Transport Corporation (DTC) operates the world's largest fleet of CNG-powered buses)</li>
+      <li><b> Auto-rickshaws</b> (The auto-rickshaws (popularly known as Auto) are an important and popular means of public transportation in Delhi, as they are cheaper than taxis)</li>
+      <li><b> Taxis</b> (Though easily available, taxis are not an integral part of Delhi public transport. The Indian Tourism Ministry and various private owners operate most taxis)</li>
+      
+    </ul> 
+    <h3>Metro</h3>
+    <li>The Delhi Metro is a mass rapid transit (MRT) system serving Delhi and its satellite cities of Ghaziabad, Faridabad, Gurugram, Noida, Bahadurgarh and Ballabhgarh, in the National Capital Region of India</li>
+
+    
+    
+
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Hotels</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Best hotels to Visit in the delhi</p>
+
+  </div>
+  <h3> The Oberoi    <a href="https://www.oberoihotels.com/hotels-in-delhi/">Click here</a></pr></h3>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images\hotel no1.jpg" style="width:100%" onclick="onClick(this)" alt="Delhi">
+      <img src="images\hotel1.4.jpg" style="width:100%" onclick="onClick(this)" alt="redfort">
+      
+      
+    </div>
+
+    <div class="w3-half">
+      <img src="images\hotel1.1.jpg" style="width:100%" onclick="onClick(this)" alt="redfort">
+      <img src="images\hotel1.3.jpg" style="width:100%" onclick="onClick(this)" alt="redfort">
+      
+    </div>
+  </div>
+  
+  <!-- The Team -->
+  <!-- <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light">
+        <img src="images\hotel no1.jpg" alt="The Oberoi " style="width:100%">
+        <div class="w3-container">
+          <h3>Taj mahal</h3>
+          <p class="w3-opacity">Crown of the Palace</p>
+          <p> It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\redfort.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Red fort</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the Mughal Emperors. Emperor Shah Jahan commissioned construction of the Red Fort on an earlier 10th century fort by Anangpal Tomar on 12 May 1638, when he decided to shift his capital from Agra to Delhi.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\varanasi.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>The Holy City of Varanasi </h3>
+          <p class="w3-opacity">Architect</p>
+          <p>A major pilgrimage center for Hindus, the holy city of Varanasi has long been associated with the mighty Ganges River, one of the faith's most important religious symbols. Dating back to the 8th century BC, Varanasi is one of the oldest still inhabited cities in the world.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Risk Level</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>In a majority of Delhi NCR, residents were at a very high risk or higher for contracting Covid-19 in mid april, according to an analysis of coronavirus case and testing data and public health experts. For more information:</p>
+    <pr><b><a href="https://www.covid19india.org/state/DL">Click here</a></b></pr>
+    
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

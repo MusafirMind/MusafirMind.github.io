@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome to Mumbai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <form>
+      <input type="button" onclick="window.location.href='index.html'" value="Home" />
+    </form>
+    <h3 class="w3-padding-64"><b>Mumbai</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Famous Places</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transports</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hotels</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Risk level</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Mumbai</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Famous places</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images\mumbai1.jpg" style="width:100%" onclick="onClick(this)" alt="Mumbai">
+      <img src="images\mumbai2.jpg" style="width:100%" onclick="onClick(this)" alt="Muncipal Corporation Building">
+      <img src="images\mumbai3.jpg" style="width:100%" onclick="onClick(this)" alt="Marine drive">
+    </div>
+
+    <div class="w3-half">
+      <img src="images\mumbai4.jpg" style="width:100%" onclick="onClick(this)" alt="Bandra-Worli">
+      <img src="images\mumbai5.jpg" style="width:100%" onclick="onClick(this)" alt="Victoria Terminus">
+      <img src="images\mumbai6.jpg" style="width:100%" onclick="onClick(this)" alt="Gateway India">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Transport</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4><b>Mumbai is undoubtedly crowded and stuffed with traffic, but even then a civilised city. Getting in and around is simple if few rules are religiously followed. The excellent public transport network is easily accessible and fairly cheap . Instead of public transport Mumbai has taxi, auto rickshaw and trains as local transport.  </b></h4>
+ 
+    <h2>Road transport</h2>
+    
+    <ul>
+      <li><b> Buses</b><br> Mumbai has govt. as well as private bus services    <br> Brihanmumbai Electric Supply and Transport (BEST) has a fleet of single, double decker buses and air-conditioned Tata Macropolo CNG mini buses. BEST runs their buses all over Mumbai and outskirts like Navi Mumbai, Thane and Mira-Bhayandar.<br>
+        Navi Mumbai Municipal Transport (NMMT) operates air-conditioned Volvo buses from Navi Mumbai to Bandra, Dadar, Mantralaya & Borivali and non A/C buses from Navi Mumbai to Mulund, Kurla, Dadar, Andheri, Dindoshi & Mantralaya.<br>
+        Thane Municipal Transport (TMT) operates their buses from Thane to Mulund, Borivali, BKC & Andheri.<br>
+        Mira-Bhayandar Municipal Transport (MBMT) operates their buses from Mira-Bhayandar to Jogeshwari and Borivali</li>
+
+      <li><b> Auto-rickshaws</b> (The auto-rickshaws (popularly known as Auto) are an important and popular means of public transportation in Mumbai, as they are cheaper than taxis)</li>
+
+      <li><b> Taxis</b> Taxis arrived in 1911 to complement horse cars. Black and yellow Fiat taxis are an integral part of the city's heritage and have been depicted in numerous Bollywood movies. Metered taxis ply throughout Mumbai and have a monopoly from Bandra to Churchgate on the Western line and Sion to Chatrapati Shivaji Terminus on the Central line. Beyond Sion and Bandra auto rickshaws are not allowed and one has to hire a taxi. However, between Sion to Thane and Bandra to Bhayandar, both Taxis and autorickshaws are available to transport passengers.<br>
+
+        Silver-Green taxis run by Meru and Yellow-Red by Gold cabs and Black by Mega Cabs<br>
+        Blue and silver air-conditioned metered taxis known as "Cool Cabs",<br>
+        Some private taxi operators provide yellow number plate cars for transportation<br>
+        Mumbai is served by two intra-city highways: Old Mumbai-Pune Highway and Mumbai-Ahmedabad Highway.</li>
+      
+    </ul> 
+    <h3>Metro</h3>
+    <li>The Mumbai Metro is a mass rapid transit (MRT) is faster mode of transportation which resolves the issue of heavy traffic of mumbai </li>
+ 
+    <h3>For bus Booking</h3>
+   <pr><b><a href="https://www.redbus.in/buses/mumbai-bus-tickets">Click here</a></b></pr> 
+ <br><h3>For taxi Booking</h3>
+ <pr><b><a href="https://www.olacabs.com/outstation?gclid=EAIaIQobChMIk5WbpfL17gIVRlpgCh1R9g6SEAAYBCAAEgJCFPD_BwE">Click here</a></b></pr>
+
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Hotels</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b><h2>Best Hotles as per your choice</h2></b></p>
+    <p>When you’re away from home hotels provide you with a place to go to: relax, recharge, and if you’re a salesman who travels a lot, a place to go for a few hours at a time (in between sales calls), and work on that stress heart attack that’s coming.
+
+
+    
+    </p>
+    
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/hotelmumbai1.webp" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Taj Mahal Tower</h3>
+          
+          <p>Built in 1973, the iconic The Taj Mahal Tower Mumbai stands majestically across from the Gateway of India, overlooking the Arabian Sea. Everything was absolutely amazing- the room, the staff, the food. All just top of the line.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/hotelmumbai2.webp" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Triden Nariman Point</h3>
+          
+          <p>The 5-star Trident Nariman Point is located in Mumbai, overlooking the beautiful Arabian Sea from Marine Drive. All arrangements and staff is at it's best and help extended beyond expectations.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/hotelmumbai4.webp" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Taj lands End</h3>
+          
+          <p>With a view overlooking the Arabian Sea and the Bandra Worli Sea Link, and located just 200 metres from the seafront, Taj Lands End features award-winning traditional Indian spa treatments, an outdoor... I like to stay there because of the comfortable and good food and best staff behavior</p>         </p>
+      
+        </div>
+      </div>
+    </div>
+    <h3><b>For Hotel Booking</b></h3>
+    <pr><b><a href="https://www.booking.com/city/in/bombay.en.html?aid=306395;label=bombay-gIurAvBFx9qfcMXxU*FKLAS396892474225:pl:ta:p1480:p2:ac:ap:neg:fi:tikwd-125266192:lp9302611:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c;ws=&gclid=EAIaIQobChMIm6bpvPP17gIVQ62WCh3IlgJ1EAAYAiAAEgI0J_D_BwE">Click here</a></b></pr>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Risk Level</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>In Mumbai, residents were at a very high risk or higher for contracting Covid-19 in mid February, according to an analysis of coronavirus case and testing data by The BMC and public health experts. For more information:</p>
+    
+    <h2>To see the current cases of COVID-19</h2>
+    <pr><b><a href="https://www.covid19india.org/state/MH">Click here</a></b></pr>
+
+
+  </div>
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+

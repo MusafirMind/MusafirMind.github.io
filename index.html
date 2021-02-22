@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>TravelSafe</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+      <!---Search-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!----------->
+
+      <!---Where do you wana go-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <!------>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="header_white_section">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="header_information">
+                           <ul>
+                              <li><img src="images/1.png" alt="#"/> C-26 sector 62 Noida</li>
+                              <li><img src="images/2.png" alt="#"/> +71  5678954378</li>
+                              <li><img src="images/3.png" alt="#"/> Musafir@gmail.com</li> 
+                              <li><a href="login.html"> Login</a></li> 
+
+
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="index.html"><img src="images/Musafir.png" alt="#"></a> </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li class="active"> <a href="#">Home</a> </li>
+                                 <li> <a href="#about">About</a> </li>
+                                 <li><a href="#travel">Travel</a></li>
+                                 <li><a href="#blog">Blog</a></li>
+                                 <li><a href="#contact">Contact Us</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+      <section >
+         <div class="banner-main">
+            <img src="images/HeaderBG1.jpg" width = "2000px" alt="#"/>
+            <div class="container">
+               <div class="text-bg">
+                  <h1>Your Saftey<br><strong class="white">Is Our First Priority</strong></h1>
+                  <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
+                  <div class="container">
+                    
+                    
+         <!-------------------------------------------------------search------------------------------------------>
+         
+         <section id="tabs">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 ">
+                     <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                           <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">International</a>
+                           <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Domestic</a>
+                        </div>
+                     </nav>
+                     <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <!--International -->
+                
+   <form class="example" action="">
+ <input type="text" style="color:white;"value="" id="search" >
+ <button type="submit" style = "width: 50px" onclick="openPage()"><i class="fa fa-search" ></i></button>
+   </form>
+<script>
+
+function openPage(){
+   var x =document.getElementById("search").value;
+
+   if(x==="india"|| x==="INDIA"){
+      window.open("india.html");
+   }
+    if (x==="usa"|| x==="usa") {
+
+       window.open("usa.html");
+   } 
+   if(x==="uk"|| x==="UK") {
+      window.open("uk.html");
+      
+   }
+}
+
+
+
+</script> 
+
+                <!--EI-->
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                           <!--Domestic-->
+                          
+                           <form class="example" action="">
+                              <input type="text" style="color:white;"value="" id="hello" >
+                              <button type="submit" style = "width: 50px" onclick="openPage1()"><i class="fa fa-search" ></i></button>
+                                </form>
+                                <script>
+
+                                 function openPage1(){
+                                    var x =document.getElementById("hello").value;
+                                 
+                                    if(x==="mumbai"|| x==="MUMBAI"){
+                                       window.open("mumbai.html");
+                                    }
+                        
+                                    if(x==="delhi"|| x==="DELHI"){
+                                       window.open("delhi.html");
+                                       
+                                    }
+                                 }
+                                 
+                                 
+                                 
+                                 </script> 
+
+
+                              
+                          
+                           <!--ED-->
+                        </div>
+                     </div>
+                  
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ./Tabs -->
+            
+         
+                    
+                     
+                    
+
+                     
+
+      </div>
+   </div>
+</div>
+</div>
+</section>
+
+           <!-----------------------------End Search---------------------------------------------------------->
+                
+                 
+      <!-- about -->
+      
+      
+      
+      
+      
+      
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 ">
+                  <div class="titlepage">
+                     <h2>About musafhir</h2>
+                     <span> The travelers need to stay in touch with the airlines ,hotels and  covid situation to get notified by the cancellation or amendments in the schedule. The travelers must ensure that the musafhir have their contact details such as phone number or email.</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                     <div class="about-box">
+                        <p> <span>The world is suffering from this pandemic disease called COVID-19. The number of people infected from the disease has reached more than 110,097,490 and it is still increasing. No, we don’t mean to scare our readers, but we also, can’t dismiss the seriousness of this deadly virus taking over the world rapidly. The disease also raised anxiety amongst travelers. Even travelers have become skeptical about planning their trips.
+ 
+                        </span></p>
+                        <div class= "clipart-airplane-journey-area">
+                           <img src="images\clipart-airplane-journey.png" alt="images">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+            <a href="#">Read More</a>
+         </div>
+      </div>
+      
+      <!-- end about -->
+      
+      
+      
+      
+      
+     <!-- traveling -->
+ 
+<!-- by ishant -->
+
+
+ 
+<div id="travel" class="traveling">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 ">
+            <div class="titlepage">
+               <h2>Select Offers For Traveling</h2>
+               <span>Find the most amazing locations and helpful information about the Locality,Hotels and Transport.</span> 
+           
+            </div>
+         </div>
+      </div>
+      <div class="row" style="width:1550px; margin: auto;">
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="icon/travel-icon.png" alt="icon"/></i>
+               <h3>Different Countrys</h3>
+               <p>
+                   Amid this pandemic, travellers are hitting the road once again. Travellers, plan your destiny here
+                    </p>
+               <div class="read-more">
+                  <a  href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="images\Hotel.png" alt="icon"/></i>
+               <h3>Hotels</h3>
+               <p> Looking for the perfect accommodation site.we’ve got you covered. Here are the list of hotels  </p>
+               <div class="read-more">
+                  <a  href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="traveling-box">
+               <i><img src="icon/travel-icon3.png" alt="icon"/></i>
+               <h3>Services</h3>
+               <p>Plan your journey to find the best way to get to your destination and calculate fares and travel times. </p>
+               <div class="read-more">
+                  <a  href="#">Read More</a>
+               </div>
+            </div>
+         </div>
+         
+        
+<br><br>
+
+
+
+
+<!-- end traveling -->
+      <!--London -->
+      <div class="container" style = "position:relative; right:220px; top:50px;" >
+
+         <div class="titlepage">
+            <h2>Spend your weekend in NewYork, London, Delhi..</h2>
+         </div>
+           
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+           </ol>
+       
+           <!-- Wrapper for slides -->
+           <div class="carousel-inner">
+             <div class="item active">
+               <img src="images/London.jpg" alt="London" style="width:100%;">
+             </div>
+       
+             <div class="item">
+               <img src="images/chicago.jpg" alt="Chicago" style="width:100%;">
+             </div>
+           
+             <div class="item">
+               <img src="images/newyork.jpg" alt="New york" style="width:100%;">
+             </div>
+           </div>
+       
+           <!-- Left and right controls -->
+           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="right carousel-control" href="#myCarousel" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+       </div>
+       
+      <!-- end London -->
+      <!--Tours -->
+      <div class="Tours">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>The Best Tours</h2>
+                     <span><h3>Travel makes one modest. You see what a tiny place you occupy in the world</h3></span> 
+                  </div>
+               </div>
+            </div>
+            <section id="demos">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="owl-carousel owl-theme">
+                        <div class="item">
+                           <img class="img-responsive" src="images/1.jpg" alt="#" />
+                           <h3>Holiday Tour</h3>
+                           <p>Big Ben's clock is kept alarmingly accurate - down to the second, according to British Scholar, and as such, serves as a symbol of leadership and reliability to people across the world, who look to Britain to guide their timekeeping efforts.</p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/2.jpg" alt="#" />
+                           <h3>New York</h3>
+                           <p>The city seen from the Queensboro Bridge is always the city seen for the first time, in its first wild promise of all the mystery and the beauty in the world.</p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/3.jpg" alt="#" />
+                           <h3>London</h3>
+                           <p>London is one of the world's leading tourism destinations, and the city is home to an array of famous tourist attractions. </p>
+                        </div>
+                        <div class="item">
+                           <img class="img-responsive" src="images/2.jpg" alt="#" />
+                           <h3>Holiday Tour</h3>
+                           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in soe suffk even slightly believable. If y be sure there</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!-- end Tours -->
+      <!-- Amazing -->
+      <div class="amazing">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="amazing-box">
+                     <h2>Amazing United Kingdom Tour</h2>
+                    <!--- <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</span>
+                     <a href="#">Book Now</a>--><a href="uk.html">Get More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Amazing -->
+      <!-- our blog -->
+      <div id="blog" class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our Blog</h2>
+                     <span></span> 
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/blog-image0.jpg" alt="#"/>
+                        <span>4 Feb 2019</span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Travel  Agency</span> 
+                        <p><strong class="Comment"> 06 </strong>  Comment</p>
+                        <p><strong class="like">05 </strong>Like</p>
+                     </div>
+                     <h3>London Amazing Tour</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="blog-box">
+                     <figure><img src="images/blog-image.jpg" alt="#"/>
+                        <span>10 Feb 2019</span>
+                     </figure>
+                     <div class="travel">
+                        <span>Post  By :  Travel  Agency</span> 
+                        <p><strong class="Comment"> 06 </strong>  Comment</p>
+                        <p><strong class="like">05 </strong>Like</p>
+                     </div>
+                     <h3>London Amazing Tour</h3>
+                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our blog -->
+      <!-- footer -->
+      <footer>
+         <div id="contact" class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                     <ul class="location_icon">
+                        <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                        <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                        <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                        <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3>CONTACT US</h3>
+                        <span>c-26, sec-62 Rd phase 2, <br>Industrial area,<br>
+                        Noida, Uttar Pradesh 201309<br><br>
+                        01204364545</span>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3>ADDITIONAL LINKS</h3>
+                        <ul class="link">
+                           <li> <a href="#">About us</a></li>
+                           <li> <a href="#">Terms and conditions</a></li>
+                           <li> <a href="#"> Privacy policy</a></li>
+                           <li> <a href="#">News</a></li>
+                           <li> <a href="#"> Contact us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3> Contact</h3>
+                        <div class="row">
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <input class="Newsletter" placeholder="Name" type="text">
+                           </div>
+                           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                              <input class="Newsletter" placeholder="Email" type="text">
+                           </div>
+                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                              <textarea class="textarea" placeholder="comment" type="text">Comment</textarea>
+                           </div>
+                        </div>
+                        <button class="Subscribe">Submit</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <div class="container">
+                     <p>Copyright 2021 All Right Reserved By <a href="https://html.design/">Motherson Family</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 3
+               }
+             }
+           })
+         })
+      </script>
+     
+   </body>
+</html>

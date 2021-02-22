@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome to INDIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <form>
+      <input type="button" onclick="window.location.href='index.html'" value="Home" />
+    </form>
+    <h3 class="w3-padding-64"><b>India</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cities</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Current Guidelines</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Famous Places</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Risk level</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>INDIA</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Cities</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images\india gate.jpeg" style="width:100%" onclick="onClick(this)" alt="Delhi">
+      <img src="images\taj mahal.jpg" style="width:100%" onclick="onClick(this)" alt="Uttar pradesh">
+      <img src="images\signature bridge delhi.png" style="width:100%" onclick="onClick(this)" alt="delhi">
+    </div>
+
+    <div class="w3-half">
+      <img src="images\mumbai.jpg" style="width:100%" onclick="onClick(this)" alt="mumbai">
+      <img src="images\kolkata.jpg" style="width:100%" onclick="onClick(this)" alt="kolkata">
+      <img src="images\mumbai 2.jpg" style="width:100%" onclick="onClick(this)" alt="mumbai ">
+      <img src="images\jaipur.png" style="width:100%" onclick="onClick(this)" alt="jaipur ">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Current Guidelines</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4><b>In effort to help slow the spread of novel coronavirus (COVID-19), the indian government has temporarily suspended entry for certain travelers into the india.</b></h4>
+
+    <h2>Temporary Travel Restrictions</h2>
+    <pr> Revised Guidelines of Ministry of Health and Family Welfare for international arrivals.</pr>
+    <ul>
+      <li> All travelers should submit self-declaration form on the online portal (www.newdelhiairport.in) at least 72 hours before the scheduled travel.</li>
+      <li>They should also give an undertaking on the portal that they would undergo mandatory quarantine for 14 days i.e. 7 days paid institutional quarantine at their own cost, followed by 7 days isolation at home with self-monitoring of health.</li>
+      <li>Only for compelling reasons/ cases of human distress such as pregnancy, death in family, serious illness and parent(s) with children of the age of 10 years or below, home quarantine may be permitted for 14 days.</li>
+      <li> If they wish to seek such exemption under para (iii) above, they shall apply to the online portal (www.newdelhiairport.in) at least 72 hours before boarding. The decision taken by the government as communicated on the online portal will be final.</li>
+      <li>Travelers may also seek exemption from institutional quarantine by submitting a negative RT-PCR test report on arrival. This test should have been conducted within 96 hrs prior to undertaking the journey. The test report should be uploaded on the portal for consideration. Each passenger shall also submit a declaration with respect to authenticity of the report and will be liable for criminal prosecution, if found otherwise. The test report could also be produced upon arrival at the point of entry airport in India.</li>
+     
+      
+    </ul> 
+    <h3>Additionally </h3>
+    <li>InternationalPassengers  arriving  through seaports/land  portswill  also  have  to undergo the same protocol as above, exceptthat facility for online registration is not available for such passengers currently.</li>
+    <li>Such passengers shall submit the self-declaration form to the concerned authorities of Government of India at sea ports/land ports on arrival.</li>
+    <h3>For more information            <b><a href="https://boi.gov.in/content/advisory-travel-and-visa-restrictions-related-covid-19-1">Click here</a></b></pr></h3>
+    
+
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Famous Places to visit</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Best Places to Visit in the India</p>
+    <p>With so much to see in this vast country, it can be difficult to know where to start when it comes to planning a trip in the India. World-class cities, some known <br>for history and others known for fun or glamour, give visitors a broad spectrum of places to choose from. The best places to visit in the India may simply<br> depend on your personal interests.
+    </p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\taj mahal.jpg" alt="Taj mahal" style="width:100%">
+        <div class="w3-container">
+          <h3>Taj mahal</h3>
+          <p class="w3-opacity">Crown of the Palace</p>
+          <p> It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\redfort.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Red fort</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>The Red Fort is a historic fort in the city of Delhi (in Old Delhi) in India that served as the main residence of the Mughal Emperors. Emperor Shah Jahan commissioned construction of the Red Fort on an earlier 10th century fort by Anangpal Tomar on 12 May 1638, when he decided to shift his capital from Agra to Delhi.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images\varanasi.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>The Holy City of Varanasi </h3>
+          <p class="w3-opacity">Architect</p>
+          <p>A major pilgrimage center for Hindus, the holy city of Varanasi has long been associated with the mighty Ganges River, one of the faith's most important religious symbols. Dating back to the 8th century BC, Varanasi is one of the oldest still inhabited cities in the world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Risk Level</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>In a majority of India, residents were at a very high risk or higher for contracting Covid-19 in mid February, according to an analysis of coronavirus case and testing data  and public health experts. For more information:</p>
+    <pr><b><a href="https://www.covid19india.org/">Click here</a></b></pr>
+    <h2>To see the current cases of COVID-19</h2>
+    <pr><b><a href="https://www.worldometers.info/coronavirus/country/india/">Click here</a></b></pr>
+  </div>
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

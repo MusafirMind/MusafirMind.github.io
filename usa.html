@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome to USA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <form>
+      <input type="button" onclick="window.location.href='index.html'" value="Home" />
+    </form>
+    <h3 class="w3-padding-64"><b>United States<br>of America</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Cities</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Current Guidelines</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Famous Places</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Risk level</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>United States of America (USA)</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Cities</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/usa1.jpg" style="width:100%" onclick="onClick(this)" alt="Chicago">
+      <img src="images/usa2.jpg" style="width:100%" onclick="onClick(this)" alt="NewYork">
+      <img src="images/usa3.jpg" style="width:100%" onclick="onClick(this)" alt="Los Angeles">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/usa4.jpg" style="width:100%" onclick="onClick(this)" alt="Las Vegas">
+      <img src="images/usa5.jpg" style="width:100%" onclick="onClick(this)" alt="San Francisco">
+      <img src="images/usa6.jpg" style="width:100%" onclick="onClick(this)" alt="Boston">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-blue" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-blue w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Current Guidelines</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4><b>In effort to help slow the spread of novel coronavirus (COVID-19), the U.S. government has temporarily suspended entry for certain travelers into the United States.</b></h4>
+
+    <h2>Temporary Travel Restrictions</h2>
+    <pr>Anybody, with the exception of U.S. citizens, legal permanent residents, and immediate family members, who has been in the following countries during the past 14 days may not enter the United States at this time:</pr>
+    <ul>
+      <li>China</li>
+      <li>Iran</li>
+      <li>United Kingdom (England, Scotland, Wales, Northern Ireland)</li>
+      <li>Republic of Ireland</li>
+      <li>Brazil</li>
+      <li>South Africa</li>
+    </ul> 
+    <pr>Additionally, the U.S. has reached agreements with both Canada and Mexico to temporarily limit all non-essential travel, including leisure travel, across land borders.<br> Air travel between the United States and Canada and Mexico is allowed.</pr>
+    <h3>For more information</h3>
+    <pr><b><a href="https://www.gousa.in/us-covid-19-travel-guidelines">Click here</a></b></pr>
+
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Famous Places to visit</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Best Places to Visit in the United States</p>
+    <p>With so much to see in this vast country, it can be difficult to know where to start when it comes to planning a trip in the United States. World-class cities, some known <br>for history and others known for fun or glamour, give visitors a broad spectrum of places to choose from. The best places to visit in the United States may simply<br> depend on your personal interests.
+    </p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/usaP1.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Statue Of Liberty</h3>
+          <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/usaP2.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Mount Rushmore</h3>
+          <p>Mount Rushmore National Memorial is a massive sculpture carved into Mount Rushmore in the Black Hills region of South Dakota. Completed in 1941 under the direction of Gutzon Borglum and his son Lincoln, the sculpture's roughly 60-ft.-high granite faces depict U.S. presidents George Washington, Thomas Jefferson, Theodore Roosevelt <br>and Abraham Lincoln.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/usaP3.jfif" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Golden Gate Bridge</h3>
+          <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Risk Level</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>In a majority of United States counties, residents were at a very high risk or higher for contracting Covid-19 in mid February, according to an analysis of coronavirus case and testing data by The New York Times and public health experts. For more information:</p>
+    <pr><b><a href="https://www.nytimes.com/interactive/2021/us/covid-risk-map.html">Click here</a></b></pr>
+    <h2>To see the current cases of COVID-19</h2>
+    <pr><b><a href="https://www.worldometers.info/coronavirus/country/us/">Click here</a></b></pr>
+
+
+  </div>
+
+  
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
